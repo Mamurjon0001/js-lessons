@@ -91,34 +91,49 @@
 // console.log(ages );
 
 
-function calcTip(bill){
-  if(bill>=50&&bill<=300){
-    return 15/100*bill
-  }else{
-    return 20/100*bill
-  }
-}
-const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
-const tips = [];
-const total = [];
+// function calcTip(bill){
+//   if(bill>=50&&bill<=300){
+//     return 15/100*bill
+//   }else{
+//     return 20/100*bill
+//   }
+// }
+// const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+// const tips = [];
+// const total = [];
 
-for(let i = 0; i<bills.length; i++){
-  tips.push(calcTip(bills[i]));
-  total.push(tips[i] + bills[i])
+// for(let i = 0; i<bills.length; i++){
+//   tips.push(calcTip(bills[i]));
+//   total.push(tips[i] + bills[i])
   
-}
+// }
 
 
-console.log(tips, bills,  total);
+// console.log(tips, bills,  total);
 
-const calcAvarage = function(arr){
-  let sum = 0;
-  for(let i = 0; i<arr.length; i++){
-    sum+=arr[i]
-  }
-  return sum/arr.length
-}
+// const calcAvarage = function(arr){
+//   let sum = 0;
+//   for(let i = 0; i<arr.length; i++){
+//     sum+=arr[i]
+//   }
+//   return sum/arr.length
+// }
 
-console.log(calcAvarage(total));
-console.log(calcAvarage(tips));
+// console.log(calcAvarage(total));
+// console.log(calcAvarage(tips));
 
+
+
+
+
+
+const numberOfSeries = +prompt("Nechta serial ko'rdingiz ?");
+const lastMovie = prompt("oxirgi ko'rgan serialingiz ?");
+const ball = prompt("Nechi baho berasiz ?")
+const seriesDB  = {
+  count: numberOfSeries,
+  series:{lastMovie: ball},
+  actors:{},
+  genres:[],
+  privat:false
+} 
