@@ -121,12 +121,6 @@
 
 // console.log(calcAvarage(total));
 // console.log(calcAvarage(tips));
-
-
-
-
-
-
 const numberOfSeries = +prompt("Nechta serial ko'rdingiz ?");
 const lastMovie = prompt("oxirgi ko'rgan serialingiz ?");
 const ball = prompt("Nechi baho berasiz ?")
